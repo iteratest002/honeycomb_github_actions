@@ -1,0 +1,73 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    name: CI
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: honeycombio/gha-buildevents@v2.1.0
+        with: 
+          apikey: ${{ secrets.BUILDEVENT_APIKEY }}
+          dataset: casabapentest2023_dataset2
+          status: ${{ job.status }}
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+
+          sleep 1
+
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+
+
+
+
