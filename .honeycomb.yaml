@@ -22,9 +22,7 @@ deployment_protection_rules:
                 }
             ],
             "filter_combination": "AND",
-            "orders": [],
             "havings": [],
-            "limit": 1000
         }'
         threshold:
           operator: '>'
