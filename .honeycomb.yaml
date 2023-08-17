@@ -5,7 +5,7 @@ deployment_protection_rules:
     queries:
       - honeycomb_environment: test # honeycomb environment where the query will run
         honeycomb_dataset: my-cool-application # (optional) if not used, an environment-wide honeycomb query runs instead
-        spec: queryspec '{
+        spec: '{
             "time_range": 7200,
             "granularity": 0,
             "breakdowns": [],
