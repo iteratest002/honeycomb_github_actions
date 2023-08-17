@@ -1,6 +1,6 @@
 version: 1
 
-honeycomb_team: casabatest003-gettingstarted # the honeycomb team where queries for all deployment protection rules will run
+honeycomb_team: iteratest003-gettingstarted # the honeycomb team where queries for all deployment protection rules will run
 
 deployment_protection_rules:
   Honey_test: # name of github environment where a deployment will occur
