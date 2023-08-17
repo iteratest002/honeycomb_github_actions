@@ -1,0 +1,33 @@
+version: 1
+
+honeycomb_team: casabatest003-gettingstarted # the honeycomb team where queries for all deployment protection rules will run
+
+deployment_protection_rules:
+  Honey_test: # name of github environment where a deployment will occur
+    queries:
+      - honeycomb_environment: test # honeycomb environment where the query will run
+        honeycomb_dataset: my-cool-application # (optional) if not used, an environment-wide honeycomb query runs instead
+        spec: &queryspec '{
+            "time_range": 1800,
+            "calculations": [
+              {
+                  "op": "COUNT"
+              }
+            ],
+            "filters": [
+              {
+                  "column": "status_code",
+                  "op": "=",
+                  "value": "500"
+              },
+              {
+                  "column": "build_id",
+                  "op": "=",
+                  "value": ${GITHUB_RUN_ID}  # NOTE: when deployment protection rules run, they can map the special GITHUB_RUN_ID variable
+              }
+            ],
+            "filter_combination": "AND"
+          }'
+        threshold:
+          operator: '>'
+          value: 3
