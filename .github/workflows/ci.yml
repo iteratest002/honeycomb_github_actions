@@ -2810,3 +2810,2787 @@ jobs:
           buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
           sleep 1
           buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Preconfig
+        run: |
+          echo "STEP_ID=setup-node" >> $GITHUB_ENV
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Finishing honeycomb stuff
+        run: buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Run a multi-line script
+        run: |
+          STEP_ID=second-setup-node
+          STEP_START=$(date +%s)
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 2
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
+      - name: Specific comms
+        run: |
+          STEP_ID=third-setup-node
+          STEP_START=$(date +%s)
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          buildevents cmd $TRACE_ID $STEP_ID sleep -- sleep 1
+          sleep 1
+          buildevents step $TRACE_ID STEP_ID $STEP_START $STEP_ID
