@@ -27,5 +27,5 @@ deployment_protection_rules:
             "filter_combination": "AND"
         }'
         threshold:
-          operator: '>'
+          operator: '<'
           value: 3
