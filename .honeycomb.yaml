@@ -14,5 +14,5 @@ deployment_protection_rules:
             ]
         }'
         threshold:
-          operator: '>'
+          operator: '<='
           value: 3
