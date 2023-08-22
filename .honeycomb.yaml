@@ -9,7 +9,7 @@ deployment_protection_rules:
             "time_range": 7200,
             "calculations": [
                 {
-                    "op": "COUNT"
+                    "o": "COUNT"
                 }
             ],
             "filters": [
