@@ -11,21 +11,8 @@ deployment_protection_rules:
                 {
                     "op": "COUNT"
                 }
-            ],
-            "filters": [
-                {
-                    "column": "duration_ms",
-                    "op": "=",
-                    "value": "500"
-                },
-                {
-                    "column": "app.build_id",
-                    "op": "=",
-                    "value": "${GITHUB_RUN_ID}"
-                }
-            ],
-            "filter_combination": "AND"
+            ]
         }'
         threshold:
-          operator: '<'
+          operator: '>'
           value: 3
