@@ -4,7 +4,7 @@ deployment_protection_rules:
   Honey_test: # name of github environment where a deployment will occur
     queries:
       - honeycomb_environment: test # honeycomb environment where the query will run
-        honeycomb_dataset: my-cool-application # (optional) if not used, an environment-wide honeycomb query runs instead
+        honeycomb_dataset: casabapentest2023_dataset123 # (optional) if not used, an environment-wide honeycomb query runs instead
         spec: '{
             "time_range": 7200,
             "calculations": [
